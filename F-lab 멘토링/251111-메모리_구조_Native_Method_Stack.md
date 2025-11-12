@@ -24,7 +24,7 @@
 - 즉, 각 스레드마다 다음 두 개의 스택이 따로 존재한다
     - Java Stack -> 자바 메서드용
     - Native Method Stack -> 네이티브(C/C++) 메서드용
-- 스레드가 네이티브 함수를 호충하면 그 시점에서 JVM은 Java Stack에서 Native Stack으로 제어를 넘기고, 해당 함수가 끝나면 다시 Java Stack으로 돌아간다
+- 스레드가 네이티브 함수를 호출하면 그 시점에서 JVM은 Java Stack에서 Native Stack으로 제어를 넘기고, 해당 함수가 끝나면 다시 Java Stack으로 돌아간다
 
 ### Native Method Stack 동작 과정
 
